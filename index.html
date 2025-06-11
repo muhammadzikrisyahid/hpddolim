@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenalin Tim HPPD OLIM UI 2025</title>
+  <link rel="stylesheet" href="hpddolim.css" />
+</head>
+<body>
+  <header>
+    <h1>Kenalin Tim HPPD OLIM UI 2025</h1>
+    <p>Paduan semangat dan kreativitas kami!</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Cari nama atau divisi...">
+  </div>
+
+  <section class="section">
+    <h2>Panitia Inti (PI)</h2>
+    <div class="team">
+      <div class="card big"><p>Ketua</p><span class="card-name">Muhammad dzikri</span><img src="foto-ketua1.jpg" alt="PI" class="card-img"></div>
+      <div class="card big"><p>Wakil Ketua</p><span class="card-name">Ardine</span><img src="foto-ketua2.jpg" alt="PI" class="card-img"></div>
+    </div>
+
+  </section>
+
+  <section class="section">
+    <h2>Badan Pengurus Harian (BPH)</h2>
+    <div class="team">
+      <div class="card medium"><p>Humas</p><span class="card-name">Nama BPH 1</span></div>
+      <div class="card medium"><p>Humas</p><span class="card-name">Nama BPH 2</span></div>
+       <div class="card medium"><p>humas</p><span class="card-name">Nama BPH 7</span></div>
+      <div class="card medium"><p>Dokumentasi</p><span class="card-name">Nama BPH 3</span></div>
+      <div class="card medium"><p>Dokumentasi</p><span class="card-name">Nama BPH 4</span></div>
+      <div class="card medium"><p>Publikasi</p><span class="card-name">Nama BPH 5</span></div>
+      <div class="card medium"><p>Publikasi</p><span class="card-name">Nama BPH 6</span></div>
+      <div class="card medium"><p>Desain</p><span class="card-name">Nama BPH 8</span></div>
+      <div class="card medium"><p>Desain</p><span class="card-name">Nama BPH 9</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Staf</h2>
+    <div class="team">
+      <!-- Contoh staf (50 orang) -->
+      <!-- Gunakan loop / pengulangan jika pakai JS atau backend, ini hanya dummy static -->
+      <div class="card small"><p>Staf Design</p><span class="card-name">Nama 1</span></div>
+      <div class="card small"><p>Staf Design</p><span class="card-name">Nama 2</span></div>
+      <!-- Tambahkan sampai 50 staf -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HPPD OLIM UI</p>
+  </footer>
+
+  <script>
+    function filterCards() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
