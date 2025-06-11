@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #f3ec78, #af4261, #0fd850, #00c6ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2710f5;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-container {
+  text-align: center;
+  margin: 1rem;
+}
+
+.search-container input {
+  padding: 0.5rem 1rem;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 2rem;
+}
+
+.section-title {
+  color: #d84315;
+  border-bottom: 2px solid #d84315;
+  margin-bottom: 1rem;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  flex: 1 1 220px;
+  max-width: 240px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #ffe0b2;
+}
+
+.card p {
+  font-weight: bold;
+  color: #ef6c00;
+  margin: 0.5rem 0;
+}
+
+.card-name {
+  display: block;
+  font-size: 1.1rem;
+  color: #424242;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.big {
+  flex-basis: 300px;
+}
+
+.medium {
+  flex-basis: 250px;
+}
+
+.small {
+  flex-basis: 200px;
+}
+
+.bph-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bph-buttons button {
+  background-color: #fb8c00;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bph-buttons button:hover {
+  background-color: #ef6c00;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.video-wrapper video {
+  width: 45%;
+  border-radius: 12px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.univ-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.univ-list li {
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.sponsor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.sponsor-list img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+  padding: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e10e4;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .video-wrapper video {
+    width: 90%;
+  }
+
+  .search-container input {
+    width: 80%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #f3ec78, #af4261, #0fd850, #00c6ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
