@@ -16,7 +16,7 @@ body {
 header {
   text-align: center;
   padding: 2rem;
-  background-color: #2710f5;
+  background-color: #f90cc9;
   color: white;
   animation: fadeIn 1s ease-in-out;
 }
@@ -181,7 +181,7 @@ h1 {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #1e10e4;
+  background-color: #f90cc9;
   color: white;
   margin-top: 2rem;
 }
